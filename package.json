@@ -56,14 +56,13 @@
   "devDependencies": {
     "@babel/core": "^7.13.1",
     "@babel/register": "^7.13.0",
-    "@digitalroute/cz-conventional-changelog-for-jira": "^6.0.0",
     "@simbathesailor/babel-plugin-use-what-changed": "^2.0.3",
     "@simbathesailor/use-what-changed": "^2.0.0",
     "@types/node": "^13.13.48",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "4.0.0",
     "@typescript-eslint/parser": "4.0.0",
-    "commitizen": "^4.2.1",
+    "commitizen": "^4.2.4",
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-config-react-app": "^5.2.1",
@@ -96,7 +95,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira"
+      "path": "cz-conventional-changelog"
     }
   }
 }
