@@ -1,0 +1,8 @@
+# serverless.yml
+
+zNextApplication:
+  component: '@sls-next/serverless-component@1.20.0-alpha.20'
+  inputs:
+    policy: 'arn:aws:iam::696571101394:policy/NextServerless'
+    enableS3Acceleration: false
+    bucketName: 'znext-bucket'

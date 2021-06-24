@@ -7,5 +7,6 @@ module.exports = {
         active: process.env.NODE_ENV === 'development', // boolean
       },
     ],
+    ['babel-plugin-styled-components'],
   ],
 }
