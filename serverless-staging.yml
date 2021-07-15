@@ -1,15 +1,15 @@
 name: staging-znext
 
-staging-your-site-name:
-  component: serverless-next.js@1.14.0
+staging-znext:
+  component: '@sls-next/serverless-component@1.20.0-alpha.20'
   inputs:
     bucketName: staging-znext-bucket
-    description: "*lambda-type*@Edge for staging-znext"
+    description: '*lambda-type*@Edge for staging-znext'
     name:
       defaultLambda: staging-znext-lambda
       apiLambda: staging-znext-lambda
-    domain: ["znext"]
+    domain: ['znext']
     publicDirectoryCache: false
     runtime:
-      defaultLambda: "nodejs12.x"
-      apiLambda: "nodejs12.x"
+      defaultLambda: 'nodejs12.x'
+      apiLambda: 'nodejs12.x'
