@@ -6,6 +6,7 @@ import { RootState } from '../../redux/rootReducer'
 import { Theme } from './Theme'
 import { Header } from './Header'
 import { Container } from '@material-ui/core'
+import { NextSeo } from 'next-seo'
 
 interface PageProps {
   pageName: string
@@ -27,6 +28,7 @@ export const Page = ({ pageName, body }: PageProps) => {
 
   return (
     <>
+      <NextSeo noindex={true} />
       <Theme>
         <Header pageName={pageName} />
         <Container maxWidth="lg">{body}</Container>

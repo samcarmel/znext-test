@@ -5,6 +5,7 @@ import { addPersistGate } from '../utils/app/setup'
 import React from 'react'
 import { store } from '../redux/store'
 import { Provider } from 'react-redux'
+import { NextSeo } from 'next-seo'
 
 function MyApp({ Component, pageProps }: AppProps) {
   let component = <Component {...pageProps} />
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <React.Fragment>
       <Head>
+        <NextSeo noindex={true} />
         <title>Test Project</title>
       </Head>
       <Provider store={store}>{component}</Provider>
