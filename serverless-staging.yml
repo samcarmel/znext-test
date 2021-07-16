@@ -8,7 +8,7 @@ staging-znext:
     name:
       defaultLambda: staging-znext-lambda
       apiLambda: staging-znext-lambda
-    # domain: ['znext']
+    domain: ['staging-znext', 'staging.samcarmel.com']
     publicDirectoryCache: false
     runtime:
       defaultLambda: 'nodejs12.x'
